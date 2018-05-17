@@ -1,7 +1,7 @@
 apiVersion: gitkube.sh/v1alpha1
 kind: Remote
 metadata:
-  name: sa-backend
+  name: sa-be
   namespace: default
 spec:
   ## uncomment to add a registry
@@ -10,7 +10,7 @@ spec:
      credentials:
        secretRef: regcred
   deployments:
-  - name: sa-backend 
+  - name: sa-be 
     containers: 
     - name: sa-be
       path: .
